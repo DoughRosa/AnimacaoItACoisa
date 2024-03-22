@@ -1,0 +1,142 @@
+body{
+    background-image: url("./img/plano de fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.quadradoPreto{
+    background-color: black;
+    height: 90vh;
+    width: 90vw;
+}
+
+.it{
+    position: absolute;
+    opacity: 0%;
+    top: 20px;
+    right: 3000px;
+}
+
+.stephen{
+    position: absolute;
+    opacity: 0%;
+    top: 1200px;
+    right: 3800px;
+}
+
+.king{
+    position: absolute;
+    opacity: 0%;
+    top: 1500px;
+    right: 3800px;
+}
+
+.tituloImg{
+    height: 2000px;
+}
+
+.paperBoat{
+    position: absolute;
+    top: 93vh;
+    right: 30px;
+}
+
+.barcoImg{
+    height: 300px;
+}
+
+.balaoClique{
+    position: absolute;
+    top: 1000px;
+    right: 10px;
+}
+
+.cliqueAqui{
+    position: absolute;
+    opacity: 0%;
+    top: 1850px;
+    right: 450px;
+}
+
+.avisoCliqueAqui{
+    height: 600px;
+}
+
+.streaming {
+    position: absolute;
+    opacity: 0%;
+    bottom: 1300px;
+    right: -400px;
+}
+
+
+.animationLeftToRight{
+    animation: leftToRight 15s forwards;
+}
+
+.animationSumir{
+    animation: sumir 10s forwards;
+}
+
+.animationAparecer{
+    animation: aparecer 5s forwards;
+    animation-delay: 3s;
+}
+
+.animationAparecerDelay{
+    animation: aparecer 5s forwards;
+    animation-delay: 5s;
+}
+
+.animationPiscar{
+    animation: piscar 5s infinite ease-in;
+    animation-delay: 3s;
+}
+
+
+@keyframes sumir {
+    from{
+        opacity: 100%;
+    } to {
+        opacity: 0%;
+    }
+}
+
+@keyframes aparecer {
+    from{
+        opacity: 0%;
+    } to {
+        opacity: 100%;
+    }
+}
+
+@keyframes leftToRight {
+    from{
+        left: 1px;
+        opacity: 100%;
+
+    } to {
+        left: 90vw;
+        opacity: 0%;
+    }
+}
+
+@keyframes piscar {
+    5% {
+        filter: brightness(100%);
+    }
+    10% {
+        filter: brightness(300%);
+    }
+    12%{
+        filter: brightness(100%);
+    }
+    13%{
+        filter: brightness(300%);
+    }
+    15%{
+        filter: brightness(100%);
+    }
+}
