@@ -1,10 +1,12 @@
 body{
+    background-color: black;
     background-image: url("./img/plano de fundo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
+    display: flex;
 }
 
 .quadradoPreto{
@@ -109,8 +111,7 @@ body{
 .animationPiscar{
     animation: piscar 5s infinite ease-in;
     animation-delay: 3s;
-}
-
+} 
 
 @keyframes sumir {
     from{
@@ -156,3 +157,46 @@ body{
         filter: brightness(100%);
     }
 }
+
+@media screen and (max-width: 600px){
+    .it{
+        position: absolute;
+        opacity: 0%;
+        top: -5vh;
+        right: -15vw;
+    }
+    
+    .tituloImg{
+        height: 40vh;
+    }
+    
+    .stephen{
+        display: none;
+    }
+    
+    .king{
+        display: none;
+    }
+    
+    .streaming {
+        position: absolute;
+        opacity: 0%;
+        top: 20vh;
+        right: 16vw;
+    }
+    
+    .streamingImg{
+        height: 20vh;
+    }
+    
+    .balaoClique{
+        position: absolute;
+        top: 35vh;
+        right: -2vw;
+    }
+    
+    .cliqueAqui{
+        top: 58vh;
+        right: 15vw;
+    }
+};
