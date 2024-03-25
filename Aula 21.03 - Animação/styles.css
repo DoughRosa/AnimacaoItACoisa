@@ -105,13 +105,17 @@ body{
 
 .animationAparecerDelay{
     animation: aparecer 5s forwards;
-    animation-delay: 5s;
+    animation-delay: 7s;
 }
 
 .animationPiscar{
     animation: piscar 5s infinite ease-in;
     animation-delay: 3s;
-} 
+}
+
+.animationBottomTop{
+    animation: bottomTotop 10s forwards ease;
+}
 
 @keyframes sumir {
     from{
@@ -158,6 +162,15 @@ body{
     }
 }
 
+@keyframes bottomTotop {
+    from {
+        top: 100vh;
+    }
+
+    to {
+        top: 34vh;
+    }
+}
 @media screen and (max-width: 600px){
     .it{
         position: absolute;
@@ -196,7 +209,21 @@ body{
     }
     
     .cliqueAqui{
-        top: 58vh;
+        top: 60vh;
         right: 15vw;
+    }
+
+    .animationBottomTop{
+        
+    }
+
+    @keyframes bottomTotop {
+        from {
+            top: 100vh;
+        }
+    
+        to {
+            top: 36vh;
+        }
     }
 };
